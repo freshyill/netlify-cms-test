@@ -13,7 +13,7 @@ collections:
     name: 'pages'
     label_singular: 'Page'
     description: >
-      Create a Page, Event, Session, or Redirect.
+      Create a Page
     folder: 'content/content'
     identifier_field: 'id'
     slug: '{{content_type}}_{{title}}'
@@ -27,7 +27,7 @@ collections:
       - label: 'Title'
         name: 'title'
         widget: 'string'
-        hint: "Determines the URL path e.g., /[site-section]/[title]"
+        hint: "Just a title"
 
  
       - label: Sidebar
