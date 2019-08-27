@@ -42,24 +42,27 @@ collections:
       - label: Sidebar
         name: sidebar
         widget: list
-        default: 1
+        default: []
         
         fields: 
           - label: Heading
             name: heading
             widget: string
             required: false
+            default: ''
             
           - hint: "Displays this content in a box on the page"
             label: Highlight
             name: highlight
             widget: boolean
             required: false
+            default: ''
             
           - hint: "Put some sidebar text here"
             label: "Block content"
             name: block_content
             widget: markdown
             required: false
+            default: ''
 
 
