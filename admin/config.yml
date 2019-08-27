@@ -27,6 +27,7 @@ collections:
         name: optional_field
         default: ''
         widget: string
+        required: false
         
       - label: Sidebar
         name: sidebar
