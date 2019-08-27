@@ -50,6 +50,8 @@ collections:
       - label: "Home Section"
         name: "sections"
         widget: "list"
+        required: true
+        default: ''
         types:
           - label: "Carousel"
             name: "carousel"
