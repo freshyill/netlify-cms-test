@@ -27,30 +27,31 @@ collections:
         name: optional_field
         default: ''
         widget: string
-        required: false
         
       - label: Sidebar
         name: sidebar
         widget: list
         required: false
-        default: []
+        default: ['']
         
         fields: 
           - label: Heading
             name: heading
             required: false
+            default: ''
             widget: string
             
           - hint: "Displays this content in a box on the page"
             label: Highlight
             name: highlight
-            required: false
+            default: false
             widget: boolean
             
           - hint: "Put some sidebar text here"
             label: "Block content"
             name: block_content
             required: false
+            default: ''
             widget: markdown
 
 
