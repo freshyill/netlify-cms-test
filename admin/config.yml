@@ -42,8 +42,6 @@ collections:
       - label: Sidebar
         name: sidebar
         widget: list
-        required: true
-        default: '[]'
         
         fields: 
           - label: Heading
