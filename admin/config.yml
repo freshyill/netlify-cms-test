@@ -54,19 +54,19 @@ collections:
         default: ''
         types:
         
-          label: Type 1
-          name: type1
-          widget: object
-          fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Address, name: address, widget: string}
+          - label: Type 1
+            name: type1
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
                   
-          label: Type 2
-          name: type1
-          widget: object
-          fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Address, name: address, widget: string}
+          - label: Type 2
+            name: type1
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
         
 #       - label: Sidebar
 #         name: sidebar
