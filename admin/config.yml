@@ -3,41 +3,18 @@ backend:
 media_folder: 'static/media'
 branch: master
 public_folder: '/media'
-collections:
 
- # Pages
-  - label: 'Pages'
-    name: 'pages'
+collections:
+  - label: "Pages"
     label_singular: 'Page'
-    description: >
-      Create a Page
+    name: 'page'
     folder: 'content/content'
-    slug: '{{title}}'
-    summary: {{title}}'
+    create: true
     editor:
       preview: false
-    create: true
     fields:
-
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-        hint: 'Just a title'
-        
-      - label: 'Test string'
-        name: 'test_string'
-        widget: 'string'
-        required: false
-        default: ''
-
- 
-      - label: Sidebar
-        name: sidebar
-        widget: list
-        default: []
-        required: false
-        fields:
-          - { label: Heading, name: heading, widget: string, required: false }
-          - { label: Highlight, name: highlight, widget: boolean, required: false, hint: 'Displays this content in a box on the page' }
-          - { label: 'Block content', name: block_content, widget: markdown, hint: 'Put some sidebar text here', required: false }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
