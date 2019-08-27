@@ -47,26 +47,27 @@ collections:
           - {label: Name, name: name, widget: string}
           - {label: Address, name: address, widget: string}
           
-      - label: Object Test
-        name: object_test
-        widget: list
-        required: true
-        default: ''
+      - label: "Home Section"
+        name: "sections"
+        widget: "list"
         types:
-        
-          - label: Type 1
-            name: type1
+          - label: "Carousel"
+            name: "carousel"
             widget: object
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
-                  
-          - label: Type 2
-            name: type1
+              - {label: Header, name: header, widget: string, default: "Image Gallery"}
+              - {label: Template, name: template, widget: string, default: "carousel.html"}
+              - label: Images
+                name: images
+                widget: list
+                field: {label: Image, name: image, widget: image}
+          - label: "Spotlight"
+            name: "spotlight"
             widget: object
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+              - {label: Header, name: header, widget: string, default: "Spotlight"}
+              - {label: Template, name: template, widget: string, default: "spotlight.html"}
+              - {label: Text, name: text, widget: text, default: "Hello World"}
         
 #       - label: Sidebar
 #         name: sidebar
