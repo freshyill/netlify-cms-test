@@ -26,12 +26,12 @@ collections:
 
       - label: 'Title'
         name: 'title'
-        widget: 'text'
+        widget: 'string'
         hint: "Just a title"
         
       - label: 'Test string'
         name: 'test_string'
-        widget: 'text'
+        widget: 'string'
         required: false
 
  
