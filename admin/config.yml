@@ -26,6 +26,7 @@ collections:
       - label: Optional Field
         name: optional_field
         default: ''
+        required: false
         widget: string
         
       - label: Sidebar
