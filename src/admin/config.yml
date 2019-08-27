@@ -1,9 +1,0 @@
-backend:
-  name: git-gateway
-media_folder: 'static/media'
-branch: master
-public_folder: '/media'
-show_preview_links: true
-display_url: 
-site_url: 
-collections:
