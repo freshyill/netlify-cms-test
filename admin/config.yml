@@ -17,13 +17,12 @@ collections:
     editor:
       preview: false
     create: true
-    # filter: {field: "content_type", value: "Page"}
     fields:
 
       - label: 'Title'
         name: 'title'
         widget: 'string'
-        hint: "Just a title"
+        hint: 'Just a title'
         
       - label: 'Test string'
         name: 'test_string'
