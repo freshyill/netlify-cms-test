@@ -41,6 +41,8 @@ collections:
       - label: Locations
         name: locations
         widget: list
+        required: true
+        default: ''
         fields:
           - {label: Name, name: name, widget: string}
           - {label: Address, name: address, widget: string}
