@@ -26,8 +26,13 @@ collections:
 
       - label: 'Title'
         name: 'title'
-        widget: 'string'
+        widget: 'text'
         hint: "Just a title"
+        
+      - label: 'Test string'
+        name: 'test_string'
+        widget: 'text'
+        required: false
 
  
       - label: Sidebar
