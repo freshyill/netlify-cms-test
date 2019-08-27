@@ -1,59 +1,50 @@
-backend:
+backend: 
   name: git-gateway
-media_folder: 'static/media'
 branch: master
-public_folder: '/media'
+media_folder: static/media
+public_folder: /media
 
-collections:
-  - label: "Pages"
-    label_singular: 'Page'
-    name: 'page'
-    folder: 'content/content'
+collections: 
+
+  - label: Pages
+    name: pages
+    label_singular: Page
+    folder: content/content
     create: true
-    editor:
+    editor: 
       preview: false
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      
+    fields: 
+      - label: Title
+        name: title
+        widget: string
+        
+      - label: Body
+        name: body
+        widget: markdown
+        
       - label: Sidebar
         name: sidebar
+        required: false
         widget: list
         default: []
-        required: false
-        fields:
-          - { label: Heading, name: heading, widget: string, required: false }
-          - { label: Highlight, name: highlight, widget: boolean, required: false, hint: 'Displays this content in a box on the page' }
-          - { label: 'Block content', name: block_content, widget: markdown, hint: 'Put some sidebar text here', required: false }
+        
+        fields: 
+          - label: Heading
+            name: heading
+            required: false
+            widget: string
+            
+          - hint: "Displays this content in a box on the page"
+            label: Highlight
+            name: highlight
+            required: false
+            widget: boolean
+            
+          - hint: "Put some sidebar text here"
+            label: "Block content"
+            name: block_content
+            required: false
+            widget: markdown
 
 
-
-
-
-# # Pages
-#  - label: 'Pages'
-#    name: 'pages'
-#    label_singular: 'Page'
-#    description: 'Create a Page'
-#    folder: 'content/content'
-#    slug: '{{title}}'
-#    summary: {{title}}'
-#    editor:
-#      preview: false
-#    create: true
-#    fields:
-#
-#      - label: 'Title'
-#        name: 'title'
-#        widget: 'string'
-#        hint: 'Just a title'
-#        
-#      - label: 'Test string'
-#        name: 'test_string'
-#        widget: 'string'
-#        required: false
-#        default: ''
-#
-# 
-#     
