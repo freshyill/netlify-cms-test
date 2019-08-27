@@ -28,6 +28,14 @@ collections:
         default: ''
         required: false
         widget: string
+        hint: this has a default empty string
+        
+      - label: Required Field
+        name: required_field
+        default: ''
+        required: true
+        widget: string
+        hint: this has a default empty string
         
       - label: Sidebar
         name: sidebar
