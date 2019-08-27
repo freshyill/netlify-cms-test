@@ -45,7 +45,8 @@ collections:
           - hint: "Displays this content in a box on the page"
             label: Highlight
             name: highlight
-            default: false
+            default: ''
+            required: false
             widget: boolean
             
           - hint: "Put some sidebar text here"
