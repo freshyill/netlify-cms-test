@@ -33,6 +33,7 @@ collections:
         name: 'test_string'
         widget: 'string'
         required: false
+        default: ''
 
  
       - label: Sidebar
