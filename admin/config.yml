@@ -62,7 +62,7 @@ collections:
             label: "Block content"
             name: block_content
             widget: markdown
-            required: false
-#             default: ''
+            required: true
+            default: ''
 
 
