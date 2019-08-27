@@ -12,9 +12,8 @@ collections:
     description: >
       Create a Page
     folder: 'content/content'
-    identifier_field: 'id'
-    slug: '{{content_type}}_{{title}}'
-    summary: '{{content_type}} : {{title}}'
+    slug: '{{title}}'
+    summary: {{title}}'
     editor:
       preview: false
     create: true
