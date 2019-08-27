@@ -22,11 +22,16 @@ collections:
       - label: Body
         name: body
         widget: markdown
+      
+      - label: Optional Field
+        name: optional_field
+        default: ''
+        widget: string
         
       - label: Sidebar
         name: sidebar
-        required: false
         widget: list
+        required: false
         default: []
         
         fields: 
