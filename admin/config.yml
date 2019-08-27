@@ -43,7 +43,7 @@ collections:
         name: sidebar
         widget: list
         required: true
-        default: ''
+        default: '[]'
         
         fields: 
           - label: Heading
